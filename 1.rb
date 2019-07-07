@@ -6,7 +6,7 @@ class Table
     end
 
     def mayorxmesa
-        @tablas.max
+        puts "El mayor monto por #{@mesa} es: #{@tablas.max}"
     end
 
     def promedio
@@ -31,4 +31,4 @@ constablas.each do |a|
 end
 
 promedioss = constablas.map(&:promedio)
-puts promedioss.inject(:+) / promedioss.size
+puts "El promedio total entre dias/mesas es : #{promedioss.inject(:+) / promedioss.size}"
